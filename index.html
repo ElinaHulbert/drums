@@ -85,14 +85,11 @@
                if(e.propertyName !== 'transform') return; //skip it if it is not transform
                console.log(this)
                this.classList.remove('playing');
-
            }
 
            const keys=document.querySelectorAll('.key'); //cannot listen to all keys, that's why impossible to use addEventListener
            keys.forEach(key => key.addEventListener('transitionend', removeTransition));
            window.addEventListener('keydown', playSound); //once the key down, play sound
-        
-        
         ;
 
     </script>
